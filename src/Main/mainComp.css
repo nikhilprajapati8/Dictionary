@@ -1,0 +1,203 @@
+.input {
+    padding: 1rem 0;
+}
+
+.input form {
+
+    width: clamp(275px, 50%, 50rem);
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.input form input {
+    flex: 1;
+    padding: 1rem 2rem;
+    border-radius: 14px;
+    border: none;
+    background-color: #dce1e1bf;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--black-secondary);
+    width: 100%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-left: 1rem;
+
+
+}
+
+.input button {
+    flex: 0.1;
+    border: none;
+    color: var(--black-color);
+    background-color: #bebaba;
+    padding: 0.95rem;
+    width: 100%;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    cursor: pointer;
+    margin-right: 1rem;
+
+
+}
+
+.input form input:focus {
+    outline: 2px solid #c7c7c7;
+}
+
+input::placeholder {
+    transition: opacity 0.3s linear;
+}
+
+input:focus::placeholder {
+    opacity: 0;
+}
+
+.meaning-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1.5rem 0 0;
+
+
+}
+
+.meaning {
+    margin-right: 1rem;
+}
+
+.meaning h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: var(--black-secondary);
+
+
+}
+
+.meaning h4 {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.6rem 0;
+
+
+}
+
+.button button {
+    padding: 1rem 1.2rem;
+    border: none;
+    color: white;
+    border-radius: 50%;
+    background: var(--primary-color);
+    cursor: pointer;
+    margin-left: 1rem;
+
+
+}
+
+
+.words-meaning {
+    width: clamp(300px, 50%, 50rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding: 2rem 1.5rem 0;
+    position: relative;
+}
+
+.part-of-speech {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.words-meaning h2 {
+    color: var(--black-secondary);
+    font-weight: 900;
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.part-of-speech .line {
+    background: #c8c8c8bf;
+    border-radius: 20px;
+    flex: 1;
+    height: 2px;
+}
+
+.words-meaning h3 {
+    font-weight: 500;
+    color: rgb(115, 113, 113);
+}
+
+.words-meaning ul li {
+    margin: 1.5rem 0 0;
+    color: var(--primary-color);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.words-meaning:last-child {
+    margin-bottom: 2rem;
+}
+
+ul li span {
+    color: var(--black-secondary);
+
+}
+
+.additional-info {
+    display: flex;
+    align-items: start;
+    gap: 2rem;
+    justify-content: start;
+    padding: 1.5rem 0;
+}
+
+.additional-info p {
+    align-self: self-end;
+    font-weight: 900;
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+.Not-found {
+
+    color: var(--primary-color);
+    font-weight: 900;
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 2rem 0;
+
+}
+
+
+@media screen and (max-width:750px) {
+
+    .meaning h1 {
+        font-size: 1.7rem;
+    }
+
+    .meaning h4 {
+        font-size: 0.85rem;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .meaning-button {
+        margin: 1.5rem 1rem 0;
+
+    }
+
+
+
+}

@@ -1,0 +1,30 @@
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;500;600;700;800;900&family=Noto+Sans:wght@300;400;500;600;700;800;900&family=Noto+Serif:wght@400;700&display=swap');
+
+
+
+  :root {
+      --primary-color: #cf6390;
+      --black-background: #393941;
+      --black-secondary: #393941;
+      --serif-font: Noto Serif, serif;
+  }
+
+
+
+  *,
+  *::before,
+  *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      transition: all 0.3s ease-in;
+
+  }
+
+
+  body {
+      font-family: var(--serif-font);
+      overflow-x: hidden;
+
+
+  }
